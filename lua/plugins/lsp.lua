@@ -1,0 +1,7 @@
+vim.lsp.enable('cssls')
+vim.lsp.enable('eslint')
+vim.lsp.enable('html')
+vim.lsp.enable('jsonls')
+vim.lsp.enable('pyright')
+vim.lsp.enable('tailwindcss')
+vim.lsp.enable('ts_ls')
