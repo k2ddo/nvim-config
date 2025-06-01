@@ -38,7 +38,8 @@ vim.api.nvim_create_autocmd('FileType', {
       'typescriptreact',
       'css',
       'html',
-      'json'
+      'json',
+      'lua',
   },
   callback = function()
     vim.bo.shiftwidth = 2
