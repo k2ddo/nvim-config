@@ -29,6 +29,6 @@ require("neo-tree").setup({
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "neo-tree",
   callback = function()
-    vim.cmd("f neo-tree")
+    vim.cmd("f NeoTree")
   end,
 })

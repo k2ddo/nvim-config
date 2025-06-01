@@ -16,30 +16,48 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require("lazy").setup({
-    {"Pocco81/auto-save.nvim"},
-    {'hrsh7th/cmp-nvim-lsp'},
-    {"lewis6991/gitsigns.nvim"},
-    {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v3.x",
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-            "MunifTanjim/nui.nvim",
-        }
-    },
-    {"folke/tokyonight.nvim"},
-    {"nvim-treesitter/nvim-treesitter"},
-    {'terrortylor/nvim-comment'},
-    {
-        'nvim-telescope/telescope.nvim',
-        tag = '0.1.8',
-        dependencies = { 'nvim-lua/plenary.nvim' },
-    },
-    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
-    {'neovim/nvim-lspconfig'},
-    {'hrsh7th/nvim-cmp'},
-    {'hrsh7th/cmp-vsnip'},
-    {'hrsh7th/vim-vsnip'},
-    {'hrsh7th/cmp-nvim-lsp-signature-help'},
-    {'stevearc/conform.nvim'},
+  -- Autosave
+  {"Pocco81/auto-save.nvim"},
+
+  -- Autocomplete
+  {"hrsh7th/nvim-cmp"},
+  {"hrsh7th/cmp-nvim-lsp"},
+  {"hrsh7th/cmp-nvim-lsp-signature-help"},
+  {"hrsh7th/vim-vsnip"},
+
+  -- Comments
+  {"terrortylor/nvim-comment"},
+
+  -- Formatters
+  {"stevearc/conform.nvim"},
+
+  -- LSP
+  {"neovim/nvim-lspconfig"},
+
+  -- NeoTree
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+    }
+  },
+
+  -- Telescope
+  {
+    "nvim-telescope/telescope.nvim",
+    tag = '0.1.8',
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+  {"nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+
+  -- Treesitter
+  {"nvim-treesitter/nvim-treesitter"},
+
+  -- Gitsigns
+  {"lewis6991/gitsigns.nvim"},
+
+  -- Themes
+  {"folke/tokyonight.nvim"},
 })
