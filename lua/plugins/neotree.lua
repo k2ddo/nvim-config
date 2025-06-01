@@ -13,7 +13,8 @@ require("neo-tree").setup({
     },
     filesystem = {
         filtered_items = {
-            hide_by_name = {
+            visible = true,
+            never_show = {
                 ".DS_Store",
                 ".git",
                 "node_modules",

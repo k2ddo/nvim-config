@@ -6,11 +6,10 @@ require('core.mappings')
 
 -- Plugins
 require('plugins.autosave')
-require('plugins.cmd')
+require('plugins.cmp')
 require('plugins.comments')
 require('plugins.conform')
 require('plugins.lsp')
 require('plugins.neotree')
-require('plugins.nullls')
 require('plugins.telescope')
 require('plugins.treesitter')

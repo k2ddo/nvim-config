@@ -17,6 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     {"Pocco81/auto-save.nvim"},
+    {'hrsh7th/cmp-nvim-lsp'},
     {"lewis6991/gitsigns.nvim"},
     {
         "nvim-neo-tree/neo-tree.nvim",
@@ -36,4 +37,9 @@ require("lazy").setup({
     },
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     {'neovim/nvim-lspconfig'},
+    {'hrsh7th/nvim-cmp'},
+    {'hrsh7th/cmp-vsnip'},
+    {'hrsh7th/vim-vsnip'},
+    {'hrsh7th/cmp-nvim-lsp-signature-help'},
+    {'stevearc/conform.nvim'},
 })
