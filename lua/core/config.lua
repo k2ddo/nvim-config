@@ -3,6 +3,7 @@ vim.wo.relativenumber = true
 
 vim.g.formatoptions = "qn1"
 vim.opt.showmode = false
+vim.wo.signcolumn = "yes"
 vim.opt.scrolloff = 6
 vim.opt.virtualedit = "block"
 vim.opt.undofile = true
@@ -29,6 +30,23 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.smartindent = true
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = {
+      'javascript',
+      'javascriptreact',
+      'typescript',
+      'typescriptreact',
+      'css',
+      'html',
+      'json'
+  },
+  callback = function()
+    vim.bo.shiftwidth = 2
+    vim.bo.tabstop = 2
+    vim.bo.softtabstop = 2
+  end
+})
+
 -- Fillchars
 vim.opt.fillchars = {
     vert = "│",
@@ -39,6 +57,3 @@ vim.opt.fillchars = {
     foldsep = "│",
     foldclose = "▸"
 }
-
-vim.cmd([[highlight clear LineNr]])
-vim.cmd([[highlight clear SignColumn]])
