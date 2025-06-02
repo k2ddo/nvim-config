@@ -34,6 +34,11 @@ vim.lsp.config('pyright', {
 vim.lsp.enable('tailwindcss')
 vim.lsp.config('tailwindcss', {
   capabilities = capabilities,
+  settings = {
+    tailwindCSS = {
+      classFunctions = { "cva", "cx" },
+    },
+  }
 })
 
 vim.lsp.enable('ts_ls')
