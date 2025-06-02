@@ -3,7 +3,6 @@ capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 vim.diagnostic.config({
   virtual_text = true,
-  update_in_insert = true,
   severity_sort = true,
 })
 
