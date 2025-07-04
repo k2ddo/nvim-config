@@ -20,6 +20,7 @@ require("neo-tree").setup({
                 "node_modules",
                 ".next",
                 ".venv",
+                "__pycache__"
             }
         }
     }
