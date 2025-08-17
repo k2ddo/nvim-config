@@ -7,4 +7,4 @@ function SetColor(color)
     vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError', { fg = '#ff0000' })
 end
 
-SetColor()
+SetColor('catppuccin-mocha')
