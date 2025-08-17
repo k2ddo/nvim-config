@@ -1,0 +1,5 @@
+- Install `ripgrep` by `brew install ripgrep`
+- Install `pyright` by `npm install -g pyright`
+- Install `cssls`, `eslint`, `html`, `jsonls` by `npm i -g vscode-langservers-extracted`
+- Install `tailwindcss` by `npm install -g @tailwindcss/language-server`
+- Install `ts_ls` by `npm install -g typescript typescript-language-server`
