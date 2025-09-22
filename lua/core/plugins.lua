@@ -60,5 +60,6 @@ require("lazy").setup({
 
   -- Themes
   {"folke/tokyonight.nvim"},
-  {"catppuccin/nvim", name = "catppuccin", priority = 1000}
+  {"catppuccin/nvim", name = "catppuccin", priority = 1000},
+  {"xiyaowong/transparent.nvim"},
 })
